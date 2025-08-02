@@ -9,7 +9,7 @@
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background: #000; /* Full black background */
+            background: #000;
             color: #fff;
             display: flex;
             flex-direction: column;
@@ -19,7 +19,6 @@
             min-height: 100vh;
         }
 
-        /* Profile Logo */
         .profile img {
             width: 120px;
             border-radius: 50%;
@@ -28,59 +27,42 @@
         }
 
         h1 {
-            margin: 10px 0;
+            margin: 10px 0 30px;
             font-size: 2.5rem;
             font-weight: 600;
         }
 
-        /* Social Icons */
-        .icons {
-            margin: 15px 0 30px;
-        }
-
-        .icons a {
-            margin: 0 10px;
-            font-size: 26px;
-            color: #fff;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .icons a:hover {
-            color: #aaa;
-        }
-
-        /* Links Section */
-        .links {
+        /* Section Boxes */
+        .sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
             width: 100%;
-            max-width: 500px;
+            max-width: 800px;
+        }
+
+        .section-box {
+            background: #111;
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #1f1f1f;
+            transition: 0.3s;
             display: flex;
             flex-direction: column;
-            gap: 15px;
-        }
-
-        .link-card {
-            background: #111;
-            padding: 15px;
-            border-radius: 12px;
-            display: flex;
             align-items: center;
-            text-decoration: none;
-            color: white;
-            transition: 0.3s;
-            border: 1px solid #1f1f1f;
         }
 
-        .link-card:hover {
+        .section-box:hover {
             background: #181818;
-            transform: scale(1.02);
+            transform: scale(1.05);
         }
 
-        .link-card img {
-            width: 45px;
-            height: 45px;
-            border-radius: 10px;
-            margin-right: 15px;
+        .section-box img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
         }
 
         footer {
@@ -89,7 +71,6 @@
             color: #555;
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="profile">
@@ -97,28 +78,26 @@
         <h1>MopsterX</h1>
     </div>
 
-    <div class="icons">
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fas fa-gamepad"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-    </div>
-
-    <div class="links">
-        <a href="games.html" class="link-card">
-            <img src="images/game-icon.png" alt="Games"> GAMES
+    <div class="sections">
+        <a href="games.html" class="section-box">
+            <img src="images/game-icon.png" alt="Games">
+            <span>Games</span>
         </a>
-        <a href="tools.html" class="link-card">
-            <img src="images/tools-icon.png" alt="Tools"> TOOLS
+        <a href="tools.html" class="section-box">
+            <img src="images/tools-icon.png" alt="Tools">
+            <span>Tools</span>
         </a>
-        <a href="software.html" class="link-card">
-            <img src="images/software-icon.png" alt="Software"> SOFTWARE
+        <a href="software.html" class="section-box">
+            <img src="images/software-icon.png" alt="Software">
+            <span>Software</span>
         </a>
-        <a href="mods.html" class="link-card">
-            <img src="images/mods-icon.png" alt="Mods"> MODS
+        <a href="mods.html" class="section-box">
+            <img src="images/mods-icon.png" alt="Mods">
+            <span>Mods</span>
         </a>
-        <a href="anime.html" class="link-card">
-            <img src="images/anime-icon.png" alt="Anime"> ANIME WEBSITES
+        <a href="anime.html" class="section-box">
+            <img src="images/anime-icon.png" alt="Anime">
+            <span>Anime</span>
         </a>
     </div>
 

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mopster | Bio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <title>MopsterX | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: 'Orbitron', sans-serif;
-            background: linear-gradient(135deg, #0a0a0f, #1a001f);
+            font-family: 'Poppins', sans-serif;
+            background: #000; /* Full black background */
             color: #fff;
             display: flex;
             flex-direction: column;
@@ -19,20 +19,18 @@
             min-height: 100vh;
         }
 
-        /* Neon Glow Effect */
-        h1 {
-            font-size: 2.5rem;
-            margin: 10px 0;
-            color: #c77dff;
-            text-shadow: 0 0 10px #c77dff, 0 0 20px #a855f7;
-        }
-
         /* Profile Logo */
         .profile img {
-            width: 130px;
+            width: 120px;
             border-radius: 50%;
             margin-bottom: 15px;
-            box-shadow: 0 0 25px rgba(199, 125, 255, 0.8);
+            border: 2px solid #222;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 2.5rem;
+            font-weight: 600;
         }
 
         /* Social Icons */
@@ -46,12 +44,10 @@
             color: #fff;
             text-decoration: none;
             transition: 0.3s;
-            text-shadow: 0 0 8px #8e2de2;
         }
 
         .icons a:hover {
-            color: #c77dff;
-            text-shadow: 0 0 15px #d946ef;
+            color: #aaa;
         }
 
         /* Links Section */
@@ -60,26 +56,24 @@
             max-width: 500px;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 15px;
         }
 
         .link-card {
-            background: rgba(20, 0, 30, 0.8);
+            background: #111;
             padding: 15px;
-            border-radius: 15px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             text-decoration: none;
             color: white;
-            transition: 0.4s;
-            border: 1px solid rgba(199, 125, 255, 0.4);
-            box-shadow: 0 0 10px rgba(199, 125, 255, 0.2);
+            transition: 0.3s;
+            border: 1px solid #1f1f1f;
         }
 
         .link-card:hover {
-            background: rgba(30, 0, 50, 0.9);
-            transform: scale(1.05);
-            box-shadow: 0 0 25px rgba(199, 125, 255, 0.8);
+            background: #181818;
+            transform: scale(1.02);
         }
 
         .link-card img {
@@ -92,16 +86,15 @@
         footer {
             margin-top: 40px;
             font-size: 0.8rem;
-            color: #777;
-            text-shadow: 0 0 6px #8e2de2;
+            color: #555;
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="profile">
-        <img src="logo.png" alt="Mopster Logo">
-        <h1>Mopster</h1>
+        <img src="images/logo.png" alt="MopsterX Logo">
+        <h1>MopsterX</h1>
     </div>
 
     <div class="icons">
@@ -113,25 +106,22 @@
 
     <div class="links">
         <a href="games.html" class="link-card">
-            <img src="game-icon.png" alt="Games"> GAMES
-        </a>
-        <a href="telegram-games.html" class="link-card">
-            <img src="telegram-icon.png" alt="Telegram Games"> TELEGRAM GAMES
-        </a>
-        <a href="software.html" class="link-card">
-            <img src="software-icon.png" alt="Software"> SOFTWARE
+            <img src="images/game-icon.png" alt="Games"> GAMES
         </a>
         <a href="tools.html" class="link-card">
-            <img src="tools-icon.png" alt="Tools"> TOOLS
+            <img src="images/tools-icon.png" alt="Tools"> TOOLS
+        </a>
+        <a href="software.html" class="link-card">
+            <img src="images/software-icon.png" alt="Software"> SOFTWARE
         </a>
         <a href="mods.html" class="link-card">
-            <img src="mods-icon.png" alt="Mods"> MODS
+            <img src="images/mods-icon.png" alt="Mods"> MODS
         </a>
         <a href="anime.html" class="link-card">
-            <img src="anime-icon.png" alt="Anime"> ANIME WEBSITES
+            <img src="images/anime-icon.png" alt="Anime"> ANIME WEBSITES
         </a>
     </div>
 
-    <footer>© 2025 Mopster | All Rights Reserved</footer>
+    <footer>© 2025 MopsterX | All Rights Reserved</footer>
 </body>
 </html>

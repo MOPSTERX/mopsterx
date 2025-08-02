@@ -3,92 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mopster | Games</title>
+    <title>MopsterX | Games</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #121212;
+            font-family: 'Poppins', sans-serif;
+            background: #000;
             color: #fff;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 30px;
+            min-height: 100vh;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 20px;
         }
 
-        .games-container {
+        .content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             width: 100%;
-            max-width: 900px;
+            max-width: 800px;
         }
 
-        .game-card {
-            background: #1e1e1e;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .game-card:hover {
-            background: #292929;
-            transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-        }
-
-        .game-card img {
-            width: 100%;
+        .item {
+            background: #111;
+            padding: 15px;
             border-radius: 10px;
+            text-align: center;
+            border: 1px solid #1f1f1f;
+            transition: 0.3s;
+        }
+
+        .item:hover {
+            background: #181818;
+            transform: scale(1.05);
+        }
+
+        .item img {
+            width: 100%;
+            border-radius: 8px;
             margin-bottom: 10px;
         }
 
-        .game-card a {
+        .item a {
+            color: #00f7ff;
             text-decoration: none;
-            color: #fff;
             font-weight: bold;
-            display: block;
-            margin-top: 8px;
         }
 
-        a.back {
+        .back {
             margin-top: 30px;
             color: #00f7ff;
             text-decoration: none;
-            font-size: 1.2rem;
-        }
-
-        a.back:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>🎮 Games</h1>
-    <div class="games-container">
-        <div class="game-card">
-            <img src="game1.jpg" alt="Game 1">
+    <h1>🎮 MopsterX Games</h1>
+    <div class="content">
+        <div class="item">
+            <img src="images/game1.jpg" alt="Game 1">
             <p>Game 1</p>
             <a href="https://example.com/game1" target="_blank">Download</a>
         </div>
-        <div class="game-card">
-            <img src="game2.jpg" alt="Game 2">
+        <div class="item">
+            <img src="images/game2.jpg" alt="Game 2">
             <p>Game 2</p>
             <a href="https://example.com/game2" target="_blank">Download</a>
         </div>
-        <div class="game-card">
-            <img src="game3.jpg" alt="Game 3">
-            <p>Game 3</p>
-            <a href="https://example.com/game3" target="_blank">Download</a>
-        </div>
     </div>
-    <a class="back" href="index.html">⬅ Back to Home</a>
+    <a href="index.html" class="back">⬅ Back to Home</a>
 </body>
 </html>

@@ -9,60 +9,72 @@
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background: #000;
+            background: #000; /* Full black background */
             color: #fff;
+            text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
-            padding: 30px;
-            min-height: 100vh;
+            padding: 20px;
         }
 
+        /* Profile Section */
         .profile img {
-            width: 120px;
+            width: 110px;
+            margin-top: 20px;
             border-radius: 50%;
-            margin-bottom: 15px;
-            border: 2px solid #222;
         }
 
         h1 {
-            margin: 10px 0 30px;
-            font-size: 2.5rem;
+            margin-top: 10px;
+            font-size: 2rem;
             font-weight: 600;
         }
 
-        /* Section Boxes */
-        .sections {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
-            width: 100%;
-            max-width: 800px;
+        /* Social Icons */
+        .icons {
+            margin: 10px 0 25px;
+        }
+        .icons a {
+            margin: 0 8px;
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .icons a:hover {
+            color: #aaa;
         }
 
+        /* Section Buttons */
+        .sections {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
         .section-box {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
             background: #111;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 15px;
+            border-radius: 10px;
             text-decoration: none;
             color: #fff;
             border: 1px solid #1f1f1f;
             transition: 0.3s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
-
         .section-box:hover {
             background: #181818;
-            transform: scale(1.05);
+            transform: scale(1.02);
         }
-
         .section-box img {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 10px;
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            border-radius: 8px;
         }
 
         footer {
@@ -71,33 +83,45 @@
             color: #555;
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Profile -->
     <div class="profile">
         <img src="images/logo.png" alt="MopsterX Logo">
         <h1>MopsterX</h1>
     </div>
 
+    <!-- Social Icons -->
+    <div class="icons">
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fas fa-gamepad"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Sections -->
     <div class="sections">
         <a href="games.html" class="section-box">
-            <img src="images/game-icon.png" alt="Games">
-            <span>Games</span>
+            <img src="images/game-icon.png" alt="Games"> GAMES
         </a>
-        <a href="tools.html" class="section-box">
-            <img src="images/tools-icon.png" alt="Tools">
-            <span>Tools</span>
+        <a href="telegram.html" class="section-box">
+            <img src="images/telegram-icon.png" alt="Telegram"> TELEGRAM GAMES
         </a>
         <a href="software.html" class="section-box">
-            <img src="images/software-icon.png" alt="Software">
-            <span>Software</span>
+            <img src="images/software-icon.png" alt="Software"> SOFTWARES
+        </a>
+        <a href="tools.html" class="section-box">
+            <img src="images/tools-icon.png" alt="Tools"> TOOLS
         </a>
         <a href="mods.html" class="section-box">
-            <img src="images/mods-icon.png" alt="Mods">
-            <span>Mods</span>
-      
+            <img src="images/mods-icon.png" alt="Mods"> MODS
+        </a>
+        <a href="anime.html" class="section-box">
+            <img src="images/anime-icon.png" alt="Anime"> ANIME WEBSITES
+        </a>
     </div>
 
     <footer>© 2025 MopsterX | All Rights Reserved</footer>
 </body>
 </html>
-
